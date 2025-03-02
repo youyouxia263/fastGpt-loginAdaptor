@@ -36,7 +36,7 @@ const handleKeyPress = (e: KeyboardEvent) => {
   <div v-if="!isLoggedIn" class="login-container">
     <div class="login-box">
       <div class="logo-container">
-        <img src="/vite.svg" alt="公司logo" class="company-logo" />
+        <img src="/logo.svg" alt="公司logo" class="company-logo" />
         <h1>AI助手-武汉光谷数字产业集团有限公司</h1>
       </div>
       
@@ -98,9 +98,8 @@ const handleKeyPress = (e: KeyboardEvent) => {
 }
 
 .company-logo {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 16px;
+  width: 30%;
+  height: 20%;
 }
 
 .logo-container h1 {
