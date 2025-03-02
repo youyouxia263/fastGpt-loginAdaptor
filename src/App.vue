@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import ChatFrame from './components/ChatFrame.vue'
 
 const username = ref('')
@@ -13,6 +13,14 @@ const userConfig = {
   "18062768512": "123456",
   "dzbAdmin": "123456",
 }
+
+// 页面加载时检查登录状态
+onMounted(() => {
+  const user = localStorage.getItem('user')
+  if (user && typeof user === 'string' && user in userConfig) {
+    isLoggedIn.value = true
+  }
+})
 
 const handleLogin = () => {
   // 简单的用户验证逻辑
