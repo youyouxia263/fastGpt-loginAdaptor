@@ -1,5 +1,5 @@
-IMAGE?=login-page
-TAG:=latest
+IMAGE=login-page
+TAG=latest
 npm install
 npm run build
 docker build ./ -t $(IMAGE):$(TAG) --push
