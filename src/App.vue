@@ -12,21 +12,46 @@ const userConfig = {
   "13554016166": "123456",
   "18062768512": "123456",
   "dzbAdmin": "123456",
+  "18062687335": "123456",
+}
+
+// 检查登录状态和会话时间
+const checkLoginStatus = () => {
+  const user = localStorage.getItem('user')
+  const loginTime = localStorage.getItem('loginTime')
+  
+  if (user && typeof user === 'string' && user in userConfig) {
+    if (loginTime) {
+      const currentTime = new Date().getTime()
+      const loginTimeStamp = parseInt(loginTime)
+      const timeDiff = currentTime - loginTimeStamp
+      
+      // 检查是否超过60分钟（1800000毫秒）
+      if (timeDiff > 3600000) {
+        // 超时，清除登录信息
+        localStorage.removeItem('user')
+        localStorage.removeItem('loginTime')
+        isLoggedIn.value = false
+        return
+      }
+    }
+    isLoggedIn.value = true
+  }
 }
 
 // 页面加载时检查登录状态
 onMounted(() => {
-  const user = localStorage.getItem('user')
-  if (user && typeof user === 'string' && user in userConfig) {
-    isLoggedIn.value = true
-  }
+  checkLoginStatus()
+  // 每分钟检查一次登录状态
+  setInterval(checkLoginStatus, 300000)
 })
 
 const handleLogin = () => {
   // 简单的用户验证逻辑
   if ((username.value in userConfig) && (userConfig[username.value as keyof typeof userConfig] === password.value)) {
-    // 存储用户信息和权限
+    // 存储用户信息、权限和登录时间
     localStorage.setItem('user', username.value)
+    localStorage.setItem('loginTime', new Date().getTime().toString())
     isLoggedIn.value = true
   } else {
     alert('用户名或密码错误')
