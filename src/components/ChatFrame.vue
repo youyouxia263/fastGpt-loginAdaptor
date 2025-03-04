@@ -7,6 +7,9 @@ const menuConfig = {
     '光谷数产公文写作助手': 'http://ai.whggsc.cn:30000/chat/share?shareId=jewv444zmmt52m7zo10d976v',
     '智能学习助手': 'http://ai.whggsc.cn:30000/chat/share?shareId=ej6di83t8feotb0y7cpbs673',
     '教育局招生咨询AI助手': 'http://ai.whggsc.cn:30000/chat/share?shareId=nq1wzfycz93b5v5719ur74l8&showHistory=0',
+    '文件智能检索解读': 'http://ai.whggsc.cn:30000/chat/share?shareId=kzui1t7bwezo3qn0ghemjrdo',
+    '文稿智能核对': 'http://ai.whggsc.cn:30000/chat/share?shareId=tw962n1yp8d20aokj1s3tlnx',
+    '协助编写拟办意见': 'http://ai.whggsc.cn:30000/chat/share?shareId=1hkqyos7yqharffqoiuu0yhm',
   },
   '13871088892': {
     '教育局招生咨询AI助手': 'http://ai.whggsc.cn:30000/chat/share?shareId=nq1wzfycz93b5v5719ur74l8&showHistory=0'
@@ -30,7 +33,7 @@ const menuConfig = {
     '文稿智能核对': 'http://ai.whggsc.cn:30000/chat/share?shareId=tw962n1yp8d20aokj1s3tlnx',
     '协助编写拟办意见': 'http://ai.whggsc.cn:30000/chat/share?shareId=1hkqyos7yqharffqoiuu0yhm'
   },
-  'zwj': {
+  'zfw': {
     '文件智能检索解读': 'http://ai.whggsc.cn:30000/chat/share?shareId=kzui1t7bwezo3qn0ghemjrdo',
     '文稿智能核对': 'http://ai.whggsc.cn:30000/chat/share?shareId=tw962n1yp8d20aokj1s3tlnx',
     '协助编写拟办意见': 'http://ai.whggsc.cn:30000/chat/share?shareId=1hkqyos7yqharffqoiuu0yhm'
