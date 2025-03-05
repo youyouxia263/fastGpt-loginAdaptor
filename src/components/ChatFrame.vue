@@ -3,7 +3,6 @@ import { ref, onMounted } from 'vue'
 
 const menuConfig = {
   'admin': {
-    '党政办AI文档助手': 'http://ai.whggsc.cn:30000/chat/share?shareId=os52l549kr21hjk38gbxbu59',
     '光谷数产公文写作助手': 'http://ai.whggsc.cn:30000/chat/share?shareId=jewv444zmmt52m7zo10d976v',
     '智能学习助手': 'http://ai.whggsc.cn:30000/chat/share?shareId=ej6di83t8feotb0y7cpbs673',
     '教育局招生咨询AI助手': 'http://ai.whggsc.cn:30000/chat/share?shareId=nq1wzfycz93b5v5719ur74l8&showHistory=0',
