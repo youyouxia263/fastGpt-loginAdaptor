@@ -43,7 +43,7 @@ const menuConfig = {
   },
   'zsj-zc': {
     '公共设施查询': 'http://ai.whggsc.cn:30000/chat/share?shareId=e69qq3po9awv7it39v7y3k0d',
-    '政策问答-工作流': 'http://ai.whggsc.cn:30000/chat/share?shareId=1hkqyos7yqharffqoiuu0yhm'
+    '政策问答-工作流': 'http://ai.whggsc.cn:30000/chat/share?shareId=u62gsr9hbjz1atj49be88p2z'
   }
 }
 
