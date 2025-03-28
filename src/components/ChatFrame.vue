@@ -40,6 +40,10 @@ const menuConfig = {
   '18062687335': {
     '文件智能检索解读': 'http://ai.whggsc.cn:30000/chat/share?shareId=kzui1t7bwezo3qn0ghemjrdo',
     '协助编写拟办意见': 'http://ai.whggsc.cn:30000/chat/share?shareId=1hkqyos7yqharffqoiuu0yhm'
+  },
+  'zsj-zc': {
+    '公共设施查询': 'http://ai.whggsc.cn:30000/chat/share?shareId=e69qq3po9awv7it39v7y3k0d',
+    '政策问答-工作流': 'http://ai.whggsc.cn:30000/chat/share?shareId=1hkqyos7yqharffqoiuu0yhm'
   }
 }
 
