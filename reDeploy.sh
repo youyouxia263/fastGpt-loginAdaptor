@@ -1,5 +1,6 @@
 IMAGE=login-page
 TAG=latest
+git pull
 npm install
 npm run build
 docker build ./ -t $IMAGE:$TAG 
